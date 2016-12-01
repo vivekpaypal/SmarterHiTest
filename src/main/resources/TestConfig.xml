@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="LOLRQATestSuite"
+
+	data-provider-thread-count="1" annotations="JDK">
+	
+	
+	<parameter name="browser" value="chrome" />
+	
+	<parameter name="url" value="www.smarterhi.com" />
+	<test name="SmaterHi" annotations="JDK" preserve-order="true">
+	
+		<classes>
+		
+		<class name="com.test.google.api.TestPlaces"></class>
+		<class name="com.test.google.api.TestSmaterHiHomePage"></class>
+		</classes>
+		
+	</test>
+	
+	
+</suite>
